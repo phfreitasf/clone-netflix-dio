@@ -13,6 +13,7 @@
 body {
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white
 }
 
 header .logo{
@@ -38,4 +39,27 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/shingeki.jpg');
+    height: 400px;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .botoes {
+    margin-top: 90px;
+}
+
+.titulo {
+font-size: 50px;
 }
