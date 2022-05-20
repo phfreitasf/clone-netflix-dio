@@ -110,3 +110,15 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     opacity: 0.5;
 
 }
+
+a {
+    text-decoration: none;
+    
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: flex;
+    margin-top: 5%;
+    margin-left: 5px;
+}
