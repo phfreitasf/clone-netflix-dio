@@ -4,52 +4,57 @@
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
     background: var(--preta);
     font-family: 'Arial', Times, serif;
-    color: white
+    color: white;
+    width: 90%;
 }
 
-header .logo{
+header .logo {
     color: var(--vermelho);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
 
 }
 
-header nav a:hover{
+header nav a:hover {
     color: #FFF;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
+
 /* filme principal */
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/shingeki.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/shingeki.jpg');
     height: 400px;
     background-size: cover;
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,16 +67,20 @@ header .container{
 }
 
 .titulo {
+    margin-left: 10px;
     margin-top: 5%;
-font-size: 50px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.botao{
-    
-    background-color: rgba(0,0,0,.50);
+.descricao {
+    margin-left : 10px;
+}
+.botao {
+
+    background-color: rgba(0, 0, 0, .50);
     border: none;
-    color : white;
+    color: white;
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
@@ -79,9 +88,9 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     transition: .5s ease all;
 }
 
-.botao:hover{
-   background-color: rgba(255,255,255,1);
-   color:black;
+.botao:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
 }
 
 .botao i {
@@ -106,7 +115,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     backface-visibility: hidden;
 }
 
-.item:hover{
+.item:hover {
     opacity: 0.5;
 
 }
